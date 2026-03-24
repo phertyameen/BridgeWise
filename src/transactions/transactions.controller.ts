@@ -20,13 +20,13 @@ import { Observable } from 'rxjs';
 import { EventEmitter2 } from '@nestjs/event-emitter';
 import { CreateTransactionDto } from './dto/create-transaction.dto';
 import { UpdateTransactionDto } from './dto/update-transaction.dto';
-import { TransactionService } from './transactions.service';
+import { TransactionsService } from './transactions.service';
 
 @ApiTags('Transactions')
 @Controller('transactions')
-export class TransactionController {
+export class TransactionsController {
   constructor(
-    private readonly transactionService: TransactionService,
+    private readonly transactionService: TransactionsService,
     private readonly eventEmitter: EventEmitter2,
   ) {}
 

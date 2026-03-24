@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { INestApplication, ValidationPipe } from '@nestjs/common';
 import * as request from 'supertest';
-import { FeeAggregationModule } from '../src/fee-aggregation.module';
+import { FeeAggregationModule } from './fee-aggregation.module';
 
 describe('FeeAggregationModule (e2e)', () => {
   let app: INestApplication;

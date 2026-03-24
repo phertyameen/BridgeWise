@@ -9,7 +9,7 @@ import { Transaction, TransactionStatus } from './entities/transaction.entity';
 import { AuditLoggerService } from '../common/logger/audit-logger.service';
 
 @Injectable()
-export class TransactionService {
+export class TransactionsService {
   constructor(
     @InjectRepository(Transaction)
     private readonly transactionRepo: Repository<Transaction>,

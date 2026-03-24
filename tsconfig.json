@@ -4,14 +4,11 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "isolatedModules": true,
-    "declaration": true,
-    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
     "target": "ES2021",
     "sourceMap": true,
-    "outDir": "./dist",
     "baseUrl": "./",
     "incremental": true,
     "skipLibCheck": true,
@@ -20,28 +17,15 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "noFallthroughCasesInSwitch": false,
-    "lib": ["ES2021", "DOM"],
-    "jsx": "preserve",
+    "lib": ["ES2021"],
     "paths": {
       "@bridgewise/bridge-core": ["libs/bridge-core/src"],
-      "@bridgewise/bridge-core/*": ["libs/bridge-core/src/*"],
-      "@/*": ["src/*"]
+      "@bridgewise/bridge-core/*": ["libs/bridge-core/src/*"]
     }
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.d.ts",
-    "libs/bridge-core/src/**/*.ts",
-    "libs/bridge-core/src/**/*.d.ts"
-  ],
   "exclude": [
-    "apps",
-    "examples",
-    "packages",
-    "dist",
-    "src/src",
     "node_modules",
     "**/*.spec.ts",
-    "src/bridge-compare/mnt/**"
+    "**/*.e2e-spec.ts"
   ]
 }

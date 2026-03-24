@@ -6,7 +6,7 @@ import { ReliabilityCalculatorService } from './reliability-calculator.service';
 import { BridgeTransactionEvent } from './bridge-transaction-event.entity';
 import { BridgeReliabilityMetric } from './bridge-reliability-metric.entity';
 import { TransactionOutcome, WindowMode, ReliabilityTier } from './reliability.enum';
-import { RecordBridgeEventDto, GetReliabilityDto } from './dto/reliability.dto';
+import { RecordBridgeEventDto, GetReliabilityDto } from './reliability.dto';
 
 // ─── Mock Factory ──────────────────────────────────────────────────────────────
 

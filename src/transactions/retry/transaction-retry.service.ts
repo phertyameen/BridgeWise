@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { TransactionService } from '../transactions.service';
+import { TransactionsService } from '../transactions.service';
 import { Transaction, TransactionStatus } from '../entities/transaction.entity';
 
 export interface RetryPolicy {
@@ -24,7 +24,7 @@ export class TransactionRetryService {
     backoffStrategy: 'exponential',
   };
 
-  constructor(private readonly transactionService: TransactionService) {}
+  constructor(private readonly transactionService: TransactionsService) {}
 
   setPolicy(policy: Partial<RetryPolicy>) {
     this.retryPolicy = { ...this.retryPolicy, ...policy };
